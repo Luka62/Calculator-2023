@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 2023</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="result" readonly>
+        <div>
+            <button class="button" onclick="inputNumber(7)">7</button>
+            <button class="button" onclick="inputNumber(8)">8</button>
+            <button class="button" onclick="inputNumber(9)">9</button>
+            <button class="button operator" onclick="setOperator('/')">/</button>
+        </div>
+        <div>
+            <button class="button" onclick="inputNumber(4)">4</button>
+            <button class="button" onclick="inputNumber(5)">5</button>
+            <button class="button" onclick="inputNumber(6)">6</button>
+            <button class="button operator" onclick="setOperator('*')">*</button>
+        </div>
+        <div>
+            <button class="button" onclick="inputNumber(1)">1</button>
+            <button class="button" onclick="inputNumber(2)">2</button>
+            <button class="button" onclick="inputNumber(3)">3</button>
+            <button class="button operator" onclick="setOperator('-')">-</button>
+        </div>
+        <div>
+            <button class="button" onclick="inputNumber(0)">0</button>
+            <button class="button" onclick="clearInput()">C</button>
+            <button class="button operator" onclick="setOperator('+')">+</button>
+            <button class="button operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+</body>
+</html>
